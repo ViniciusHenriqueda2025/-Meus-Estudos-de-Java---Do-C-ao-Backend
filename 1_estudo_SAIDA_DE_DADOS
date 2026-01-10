@@ -1,0 +1,19 @@
+public class Main {
+	public static void main(String[] args) {
+	    
+	    String nome;
+		int quantos;
+		double preco;
+		char sexo;
+		
+		nome = "joao";
+		quantos = 3;
+		preco = 1600.80;
+		sexo = 'F';
+		
+		System.out.println("BEM VINDO A LOJA");
+		
+		System.out.println("O senhor " + nome+ " comprou " + quantos + " unidades no preço de " + preco + " sexo " + sexo );
+
+		}
+}
