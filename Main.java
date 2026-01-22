@@ -1,0 +1,48 @@
+package sexto;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Qual a Ordem da Matrix? ");
+		int n = sc.nextInt();
+		
+        int[][]matrix = new int[n][n];
+		
+		for(int i = 0; i < n ; i++) {  
+			for( int j = 0; j < n; j++ ) {
+
+               System.out.print("Elemento [" +i+ "," +j+ "]: ");	
+			   matrix[i][j] = sc.nextInt();
+				
+			}
+		}
+		
+		System.out.println("DIAGONAL PRINCIPAL: ");
+		for (int i=0; i<n; i++) {
+			for(int j = 0; j < n; j++) {
+			   if (i == j) {
+				  System.out.print(matrix[i][j]+"  ");  
+			   }	
+			}
+		}
+		
+		int quantidade =0;
+		
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n; j++) {
+			   if ( matrix[i][j] < 0  ) {	
+			      quantidade = quantidade + 1;
+				   
+			   }
+			}
+		}
+	    System.out.println("");
+		System.out.print("QUANTIDADE DE NEGATIVOS = " + quantidade );
+		
+		
+	}
+
+}
