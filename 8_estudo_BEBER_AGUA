@@ -1,0 +1,55 @@
+import java.util.Scanner;
+import java.util.Locale;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+	double meta = 2.000;
+	
+			System.out.println("METAS DE LITRO DE ÁGUA 2 L");
+	    	System.out.println();
+			System.out.println("BORA BATER A META??? ( 1= SIM | 2=NÃO) ");
+	
+	int escolha = sc.nextInt();
+	
+	if (escolha == 2){
+	System.out.println(" OBRIGADO MAIS NÃO SE ESQUEÇA __ÁGUA É VIDA__");	
+		}else{
+		
+		System.out.println(" ENTAO VAMOS LÁ A META DE AGUA É DE 2 LITROS DE ÁGUA");   
+		 
+		 	System.out.println("VOCE JA BEBEU AGUA HOJE?   | 1=SIM | 2=NÃO |");
+		 	int escolha2 = sc.nextInt();
+		 	if ( escolha2 == 1){
+		 	  
+		 System.out.print("QUANTOS COPOS VOCE JA BEBEU? "); 
+		double quantidade = sc.nextDouble(); 
+		quantidade = quantidade * 0.200;
+		double resultado = meta - quantidade;
+		
+	   System.out.println("RESTAM BEBER " + resultado + " LITROS D'AGUA");
+		
+		 	     
+		 	}else{
+		 	 
+		 		System.out.print(" ÓTIMO VAMOS COMEÇAR ABEBER DE AGORA EM DIANTE  A META É " + meta + ":");       
+		 	
+		 	while( meta != 0.00 ) {
+		 	   System.out.print("TOTAL DE AGUA " + meta);   
+		 		System.out.print("VOCÊ BEBEU ÁGUA DE NOVO | 1=SIM | 2=NÃO | ??? "); 
+		     
+		     int denovo = sc.nextInt();
+		 	if (denovo == 1){
+		 	System.out.print("QUANTOS COPOS VOCE BEBEU??? ");
+			double quantidade = sc.nextDouble();
+			quantidade = quantidade * 0.200 - meta;
+		 	 System.out.print("TOTAL DE AGUA " + meta);   
+		 		  
+		     }	
+		 	 }     
+		}		    
+		       	 }
+		
+		
+	}
+}
