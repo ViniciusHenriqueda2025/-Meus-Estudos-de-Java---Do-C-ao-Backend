@@ -1,0 +1,45 @@
+public class Main {
+	public static void main(String[] args) {
+	
+	produto p1 = new produto();
+	 p1.nome =  "notebook";
+	 p1.preco = 4356.89;
+	 p1.desconto = 0.25;
+	 
+	 produto p2 = new produto();
+	 p2.nome = "caneta";
+	 p2.preco = 12.56;
+	 p2.desconto = 0.20;
+	 
+	System.out.println (p1.nome);
+		
+	double precoFinal1 = p1.PrecoComDesconto();
+ System.out.println("Preco normal = " + p1.preco);
+ System.out.println("Preco com Desconto " + p1.PrecoComDesconto());
+	System.out.println();
+	System.out.println (p2.nome);
+	
+			double precoFinal2 = p2.PrecoComDesconto();
+	System.out.println("Preco normal =" + p2.preco);
+	System.out.println("Produto " + p2.nome + "Com Desconto = " + p2.PrecoComDesconto());
+			
+				
+						
+	}
+}
+
+class produto{
+   
+     String nome;
+     double preco;
+     double desconto;
+     
+     double PrecoComDesconto(){
+         
+         return preco * ( 1 - desconto);
+         
+         
+         }
+    
+    
+    }
