@@ -5,8 +5,8 @@ Este repositório foi criado para documentar toda a minha jornada de aprendizado
 ## 🚀 O que estou estudando
 - [x] Lógica de Programação Básica
 - [x] Variáveis e Tipos Primitivos
-- [ ] Entrada de Dados (Scanner)
-- [ ] Programação Orientada a Objetos (POO)
+- [x] Entrada de Dados (Scanner)
+- [x] Programação Orientada a Objetos (POO)
 
 ## 🛠️ Ferramentas
 - **Linguagem:** Java 17+
@@ -14,4 +14,4 @@ Este repositório foi criado para documentar toda a minha jornada de aprendizado
 - **Curso:** Prof. Nélio Alves
 
 ---
-*Foco, disciplina e código todo dia.*
+*Foco, disciplina e código todo dia COM A MELHOR BASE DA VIDA JESUS*
