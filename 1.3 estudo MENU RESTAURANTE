@@ -1,0 +1,146 @@
+import java.util.Scanner;
+
+
+public class Main {
+	public static void main(String[] args) {
+	
+		double soma = 0;	
+		String comida="";
+		String bebida="";
+		String nome = "";
+	Scanner sc = new Scanner (System.in);
+	//atribuicões	
+	
+	comida opcao1 = new comida();
+	
+	opcao1.nome = "Porção De Batata ";
+	opcao1.preco = 18.00;	
+	
+	comida opcao2 = new comida();
+	opcao2.nome = "Marmitex ";
+	opcao2.preco = 20.00;
+	
+	geladeira coca= new geladeira();
+	 
+	 coca.nome = "Coca Cola 2L";
+	 coca.preco = 15.00;
+	 
+	geladeira agua = new geladeira();
+	agua.nome = "Agua s/gas 200 ml ";
+	agua.preco = 2.00 ;
+					
+		System.out.println("              RESTAURANTE LINKEDIN  ");
+        System.out.println("");
+		System.out.println("");
+		System.out.println(" }}}CARDAPIO OPCÕES{{{");
+	
+System.out.println("|______________________|");
+		System.out.println("|     | COMIDA |       |");
+		System.out.println("|______________________|");
+	
+		
+		System.out.println("| ∆ "+opcao1.nome+"∆ |");
+		System.out.println("| ∆ "+opcao2.nome+"        ∆ |");
+		System.out.println("|                      |");
+		System.out.println("|======================|");
+		
+	System.out.println("|    |  BEBIDA |       |");
+	System.out.println("|______________________|");
+	System.out.println("| ∆ Coca Cola        ∆ | ");
+	System.out.println("| ∆ Agua s/gas 200ml ∆ |");	
+					
+	System.out.println("|                      |");
+	System.out.println("|______________________|");
+	System.out.println("");
+	System.out.println("");
+	System.out.println("              ###QUANDO QUISER###"); 
+	System.out.print ("  DIGITE  }[ 1 ]{  PARA FAZER SEU PEDIDO OU  }[ 0 ]{  PARA SAIR !!!");
+	System.out.print("    OPÇÃO = ");
+	int opcao = sc.nextInt();							
+
+	if (opcao == 0){
+	    System.out.println();
+	System.out.print("               OBRIGADO POR ENQUANTO");	
+	System.out.println();										}else {
+	System.out.println(); 
+	System.out.println("               SELECIONE AS OPÇÕES: ");
+																		
+	System.out.println(" }}} ESCOLHA O NUMERO DE ACORDO COM AS OPCÕES {{{");
+	System.out.println();
+		System.out.println( opcao1.nome + "  [ 1 ]   R$ = " + opcao1.preco);
+		System.out.println( opcao2.nome + "          [ 2 ]   R$ = " + opcao2.preco);					
+		
+		System.out.print("OPÇÃO = ");						
+		int OpcaoComida = sc.nextInt();
+		
+		
+		if (OpcaoComida == 1){
+		 soma =  soma + opcao1.preco;
+		 comida = opcao1.nome;   
+		  }     else if ( OpcaoComida == 2){
+		       soma = soma + opcao2.preco; 
+		       comida = opcao2.nome;
+		         }    else{
+		              System.out.println("OPÇÃO INVALIDA!!! ");
+		             
+		             }
+		
+	     }	
+	     System.out.println();		
+	     System.out.print(" BEBIDA VAI QUERER OQUE? ");
+	     System.out.println();
+		System.out.println( coca.nome + "      [ 1 ] R$ = " + coca.preco);
+		System.out.println( agua.nome + "[ 2 ] R$ = " + agua.preco); 					
+		System.out.print("OPÇÃO = ");						int OpcaoBebida = sc.nextInt();
+		
+		
+		
+		if (OpcaoBebida == 1){
+		 soma =  soma + coca.preco;
+		 bebida= coca.nome;
+		  }     else if ( OpcaoBebida == 2){
+		       soma = soma + agua.preco; 
+		       bebida = agua.nome;
+		         }    else{
+		              System.out.println("OPÇÃO INVALIDA!!! ");
+		             
+		             }	
+		           
+		           System.out.println();   								
+	     		System.out.println(" ------> TOTAL A PAGAR " +soma);
+	System.out.println();
+	System.out.println("______________________________");
+	System.out.println(" DIGITE SEU ENDEREÇO DE ENTREGA");
+System.out.println("______________________________");
+	sc.nextLine();		
+	System.out.print(" NOME: ");
+	nome = sc.nextLine();
+					
+	System.out.print(" RUA: ");
+	String rua = sc.nextLine();
+
+	System.out.print(" N°: ");
+	int n = sc.nextInt();			
+    System.out.println();
+	System.out.println(" CONFIRME OS DADOS ");
+	System.out.println( " NOME: " + nome);
+	System.out.println( " RUA: " + rua);	
+	System.out.println( " N°: " + n );
+	System.out.println( " *** PEDIDO ***");
+	System.out.println("COMIDA: " +comida);
+	System.out.println("BEBIDA: " + bebida);
+															
+	}
+}
+class comida{
+ 
+ String nome;
+ double preco;
+ }
+ 
+ class geladeira{
+    String nome;
+    double preco;
+    
+     
+   }
