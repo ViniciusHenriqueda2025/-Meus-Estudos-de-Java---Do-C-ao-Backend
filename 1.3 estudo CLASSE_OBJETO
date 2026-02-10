@@ -1,0 +1,26 @@
+public class Main {
+	public static void main(String[] args) {
+		
+		pessoa p1= new pessoa();
+		p1.nome = "Vinicius";
+		p1.idade = 27;
+		
+		System.out.println(p1.Pessoa1());
+		
+		
+		
+		
+	}
+}
+
+class pessoa{
+    String nome;
+    int idade;
+    
+    String Pessoa1(){
+      
+       return String.format("Ola tudo bem %s vc tem %d " , nome , idade );  
+        
+        }
+    
+    }
