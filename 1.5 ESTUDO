@@ -1,0 +1,38 @@
+public class Main {
+	public static void main(String[] args) {
+
+	pessoa p1 = new pessoa();
+	p1.nome = "Vinicius";
+	p1.idade = 27;
+	p1.profissao = "lavrador";
+	p1.salario = 250;
+	p1.dias = 27;
+		
+	System.out.println(" NOME= " + p1.nome + ", IDADE= " + p1.idade + ", PROFISSÃO = " + p1.profissao + ", VALOR A RECEBER = " + p1.pagamento()); 			
+				
+						
+								
+												
+	}
+}
+
+class pessoa{
+
+		String nome;
+	int idade;
+	String profissao;
+	double salario;
+	int dias;
+	
+	double pagamento(){
+		
+		return salario * dias;
+		
+		
+		
+		}
+	
+	
+	
+	
+	}
