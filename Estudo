@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+
+	Scanner sc = new Scanner(System.in);
+	
+	produto p1 = new produto();
+		p1.nome = "TV";
+		p1.preco = 900.00;
+		p1.quantidade = 10 ;	
+		
+		
+		System.out.println("PRODUTO " +p1.nome + " $ " + p1.preco + " , " + p1.quantidade + " Units ,  TOTAL = " +p1.precototal() );
+		
+		System.out.println ();
+	System.out.print ("VAI ADICIONAR QUANTOS PRODUTOS ? = ");
+	int quant = sc.nextInt();	
+	 p1.quantidade += quant;				
+						
+		System.out.println("PRODUTO " +p1.nome + " $ " + p1.preco + " , " + p1.quantidade + " Units ,  TOTAL = " +p1.precototal() );
+	
+		System.out.println ();
+	System.out.print ("VAI RETIRAR QUANTOS PRODUTOS ? = ");
+	int quanti = sc.nextInt();	
+	 p1.quantidade -= quanti;						
+								
+	System.out.println("PRODUTO " +p1.nome + " $ " + p1.preco + " , " + p1.quantidade + " Units ,  TOTAL = " +p1.precototal() );									
+								
+	}
+}
+
+class produto{
+    String nome;
+    double preco;
+    int quantidade;
+    
+    double precototal(){
+    
+    return   preco * quantidade ;
+    
+    }
+    
+    
+    }
