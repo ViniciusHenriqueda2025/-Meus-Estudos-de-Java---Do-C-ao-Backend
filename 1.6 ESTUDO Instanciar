@@ -4,27 +4,29 @@ public class Main {
 
 	Scanner sc = new Scanner(System.in);
 	
-	produto p1 = new produto();
-		p1.nome = "TV";
-		p1.preco = 900.00;
-		p1.quantidade = 10 ;	
-		
-		
-		System.out.println("PRODUTO " +p1.nome + " $ " + p1.preco + " , " + p1.quantidade + " Units ,  TOTAL = " +p1.precototal() );
-		
+	produto TV= new produto();
+		TV.nome = "TV";
+		TV.preco = 900.00;
+		TV.quantidade = 10 ;	
 		System.out.println ();
+		
+		System.out.println(TV);
+		System.out.println ();
+		
 	System.out.print ("VAI ADICIONAR QUANTOS PRODUTOS ? = ");
 	int quant = sc.nextInt();	
-	 p1.quantidade += quant;				
-						
-		System.out.println("PRODUTO " +p1.nome + " $ " + p1.preco + " , " + p1.quantidade + " Units ,  TOTAL = " +p1.precototal() );
+	 TV.quantidade += quant;
+	 				
+	System.out.println ();					
+	System.out.println (TV);	
+	System.out.println ();
 	
-		System.out.println ();
 	System.out.print ("VAI RETIRAR QUANTOS PRODUTOS ? = ");
 	int quanti = sc.nextInt();	
-	 p1.quantidade -= quanti;						
-								
-	System.out.println("PRODUTO " +p1.nome + " $ " + p1.preco + " , " + p1.quantidade + " Units ,  TOTAL = " +p1.precototal() );									
+	 TV.quantidade -= quanti;
+	 						
+	System.out.println ();							
+	System.out.println(TV);									
 								
 	}
 }
@@ -40,5 +42,10 @@ class produto{
     
     }
     
+    public String toString(){
+     return "PRODUTO " + nome + " $ " + String.format("%.2f", preco ) + " , " + quantidade + " Units ,  TOTAL = " + String.format("%.2f", precototal() ); 
+        
+        
+    }
     
     }
