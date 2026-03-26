@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+    System.out.println("Digite 3 numeros: "); 
+	int a = sc.nextInt();
+	int b = sc.nextInt();
+	int c = sc.nextInt();	
+	
+	int resultado = maior (a , b , c);
+
+		esc(resultado);		
+
+		sc.close();			
+	}
+	public static int maior(int x, int y, int z){
+	     
+	     int resul;
+	     
+	 	if (x > y&& x > z){
+		
+		  resul = x;
+		
+		  }
+	     else if( y > z){
+	         
+	       resul = y;
+	         
+	     }
+	     else{
+	      
+	        resul = z;  
+	     }
+	     return resul;
+	     
+	}
+	  public static void esc( int value){
+	    
+	   System.out.println("Maior = " + value); 
+	    
+	    }
+	    
+	
+}
